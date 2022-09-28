@@ -8,7 +8,7 @@ const Nav = () => {
           <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
             <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
               <div className="flex w-full items-center justify-between md:w-auto">
-                <a href="">
+                <a href="/home">
                   <span className="sr-only">Netizens</span>
                   <img alt="Netizens" className="h-8 w-auto sm:h-10 rounded-full" src={Logo}></img>
                 </a>
@@ -26,7 +26,7 @@ const Nav = () => {
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/">Home</Link>
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/builder">Cv Builder</Link>
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/about">About Link</Link>
-              <a href="" className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+              <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
             </div>
           </nav>
         </div>
@@ -54,7 +54,7 @@ const Nav = () => {
                 <Link className="font-medium px-5 py-5 text-gray-500 hover:text-gray-900" to="/about">About Link</Link>              
                 <br></br>
                 </div>
-                <a href="" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Log in</a>
+                <a href="/login" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Log in</a>
             </div>
         </div>
       </div>

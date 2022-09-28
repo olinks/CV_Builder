@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import About from './components/Pages/About'
 import Builder from './components/Builder/Builder';
+import About from './components/Pages/About'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,10 +15,9 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="about" element={<About />} />
-      <Route path="builder" element={<Builder />} />
+      <Route path="/builder" element={<Builder />} />
+      <Route path="/about" element={<About />} />
     </Routes>
-    {/* <App /> */}
   </BrowserRouter>
 );
 
