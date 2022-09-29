@@ -22,11 +22,11 @@ const Nav = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
+            <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4 flex">
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/">Home</Link>
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/builder">Cv Builder</Link>
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/about">About Link</Link>
-              <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+              <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500 bg-black p-3 rounded-full flex-end">Connect wallet</a>
             </div>
           </nav>
         </div>
