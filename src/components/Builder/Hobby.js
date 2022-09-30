@@ -1,6 +1,6 @@
 const Hobby = ({span}) => {
     return (
-        <span className="hidden hover:block">{span}</span>
+        <span className="">{span}</span>
     )
 }
 export default Hobby;

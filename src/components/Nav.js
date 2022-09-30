@@ -46,15 +46,15 @@ const Nav = () => {
                     </button>
                 </div>
                 </div>
-                <div className="space-y-1 px-2 pt-2 pb-3">
+                <div className="space-y-1 px-2 pt-2 pb-3 hidden">
                 <Link className="font-medium px-5 py-5 text-gray-500 hover:text-gray-900" to="/">Home</Link>
                 <br></br>
                 <Link className="font-medium px-5 py-5 text-gray-500 hover:text-gray-900" to="/builder">CV Builder</Link>
                 <br></br>
-                <Link className="font-medium px-5 py-5 text-gray-500 hover:text-gray-900" to="/about">About Link</Link>              
+                <Link className="font-medium px-5 py-5 text-gray-500 hover:text-gray-900" to="/about">About</Link>              
                 <br></br>
                 </div>
-                <a href="/login" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Log in</a>
+                <a href="/builder" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Connect Wallet</a>
             </div>
         </div>
       </div>
