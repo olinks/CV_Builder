@@ -1,6 +1,10 @@
 const Computer = () => {
     return(
-        <p>The computers go here</p>
+        <>
+            <div>
+                <p>The computers go here</p>
+            </div>
+        </>
     )
 }
 export default Computer;

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     return (
         <div className='bg-slate-400 p-5'>
-        <div className="relative bg-slate-400 px-4 pt-6 sm:px-6 lg:px-8">
+        <div className="relative bg-slate-400 px-4 pt-6 sm:px-2 lg:px-8">
           <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
             <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
               <div className="flex w-full items-center justify-between md:w-auto">
@@ -25,7 +25,7 @@ const Nav = () => {
             <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4 flex">
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/">Home</Link>
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/builder">Cv Builder</Link>
-              <Link className="font-medium text-gray-500 hover:text-gray-900" to="/about">About Link</Link>
+              <Link className="font-medium text-gray-500 hover:text-gray-900" to="/about">About</Link>
               <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500 bg-black p-3 rounded-full flex-end">Connect wallet</a>
             </div>
           </nav>
