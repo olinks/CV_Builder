@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './src/**/*.{js,jsx,ts,tsx}',
+    './src/**/*.{html,js}',
+    './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
     extend: {
@@ -12,7 +14,12 @@ module.exports = {
         '10px': '10px',
         '15px': '15px',
         '20px': '20px',
-        '100px': '100px'
+        '30px': '30px',
+        '50px': '50px',
+        '100px': '100px',
+        '150px': '150px',
+        '200px': '200px',
+        '500px': '500px'
       },
       margin: {
         '100px': '100px',
@@ -29,5 +36,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
 }

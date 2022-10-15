@@ -1,6 +1,8 @@
-const Hobby = ({span}) => {
+const Hobby = () => {
     return (
-        <span className="">{span}</span>
+        <>
+            
+        </>
     )
 }
 export default Hobby;

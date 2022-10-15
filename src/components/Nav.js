@@ -4,13 +4,12 @@ import {init} from '../Web3Client';
 import { useState } from 'react';
 
 const Nav = () => {
-  const [status, setStatus] = useState(false);
-  let address;
-  async function connect ()  {
-    setStatus(status => status = !status);
-    address = init();
+  const [address, setAddress] = useState('Connect Wallet');
+  function connect () {
+    let a = init();
+    a = a.slice(0,5) + '. . . ' + a.slice(-5);
+    setAddress(a);
   }
-  let addy = address;
     return (
         <div className='bg-slate-400 p-5'>
         <div className="relative bg-slate-400 px-4 pt-6 sm:px-2 lg:px-8">
@@ -36,7 +35,7 @@ const Nav = () => {
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/">Home</Link>
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/builder">Cv Builder</Link>
               <Link className="font-medium text-gray-500 hover:text-gray-900" to="/about">About</Link>
-              <button className="font-medium max-w-min text-indigo-600 hover:text-indigo-500 bg-black p-3 rounded-full flex-end" onClick={connect}>{status ? address : 'Connect Wallet'}</button>
+              <button className="font-medium text-indigo-600 hover:text-indigo-500 bg-black p-3 rounded-full flex-end" onClick={connect}>{address}</button>
             </div>
           </nav>
         </div>
@@ -65,7 +64,7 @@ const Nav = () => {
                 <Link className="font-medium px-5 py-5 text-gray-500 hover:text-gray-900" to="/about">About</Link>              
                 <br></br>
                 </div>
-                <button href="/builder" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100" onClick={connect}> {status ? addy : 'Connect Wallet'}</button>
+                <button href="/builder" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100" onClick={connect}> {address}</button>
             </div>
         </div>
       </div>
