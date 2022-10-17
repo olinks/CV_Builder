@@ -1,6 +1,10 @@
 // import useCollapse from 'react-collapsed';
-import t1 from './Builder/images/room.jpg';
-const Sidebar = () => {
+import t1 from './Builder/images/netizensRoom.jpg';
+import t2 from './Builder/images/art.jpg';
+const Sidebar = ({changeBg}) => {
+  const onSelect = () => {
+    changeBg(t1);
+  }
     return(
         <div className="accordion accordion-flush" id="accordionFlushExample">
           {/* Theme */}
@@ -14,7 +18,7 @@ const Sidebar = () => {
             <div id="flush-collapseOne" className="accordion-collapse border-0 collapse show max-h-[150px] overflow-y-auto"
               aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <div className="accordion-body py-4 px-5 flex flex-col inline-block">
-                <button className="py-2"><img src={t1} alt="theme-1"></img></button>
+                <button className="py-2" onClick ={onSelect}><img src={t1} alt="theme-1"></img></button>
                 <button className="py-2"><img src={t1} alt="theme-1"></img></button>
                 <button className="py-2"><img src={t1} alt="theme-1"></img></button>
                 <button className="py-2"><img src={t1} alt="theme-1"></img></button>
@@ -31,11 +35,9 @@ const Sidebar = () => {
             </h2>
             <div id="flush-collapseTwo" className="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo"
               data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
-                demonstrate
-                the <code>.accordion-flush</code> className. This is the second item's accordion body. Let's imagine this
-                being
-                filled with some actual content.</div>
+              <div className="accordion-body py-4 px-5">
+                Roadmap Roadmap
+              </div>
             </div>
           </div>
           {/* Community */}
@@ -48,12 +50,9 @@ const Sidebar = () => {
             </h2>
             <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
-                demonstrate
-                the <code>.accordion-flush</code> className. This is the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the space to make it look, at least at first
-                glance,
-                a bit more representative of how this would look in a real-world application.</div>
+              <div className="accordion-body py-4 px-5">
+                Community Community
+              </div>
             </div>
           </div>
           {/* Product */}
@@ -66,12 +65,7 @@ const Sidebar = () => {
             </h2>
             <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour"
               data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
-                demonstrate
-                the <code>.accordion-flush</code> className. This is the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the space to make it look, at least at first
-                glance,
-                a bit more representative of how this would look in a real-world application.</div>
+              <div className="accordion-body py-4 px-5">Product Product</div>
             </div>
           </div>
           {/* Paper */}
@@ -84,12 +78,9 @@ const Sidebar = () => {
             </h2>
             <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive"
               data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
-                demonstrate
-                the <code>.accordion-flush</code> className. This is the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the space to make it look, at least at first
-                glance,
-                a bit more representative of how this would look in a real-world application.</div>
+              <div className="accordion-body py-4 px-5">
+                Paper Paper
+              </div>
             </div>
           </div>
 </div>
