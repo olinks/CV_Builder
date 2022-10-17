@@ -2,7 +2,19 @@
 import t1 from './Builder/images/netizensRoom.jpg';
 import t2 from './Builder/images/art.jpg';
 const Sidebar = ({changeBg}) => {
-  const onSelect = () => {
+  const setTheme1 = () => {
+    changeBg(t1);
+  }
+  const setTheme2 = () => {
+    changeBg(t1);
+  }
+  const setTheme3 = () => {
+    changeBg(t1);
+  }
+  const setTheme4 = () => {
+    changeBg(t1);
+  }
+  const setTheme5 = () => {
     changeBg(t1);
   }
     return(
@@ -18,10 +30,11 @@ const Sidebar = ({changeBg}) => {
             <div id="flush-collapseOne" className="accordion-collapse border-0 collapse show max-h-[150px] overflow-y-auto"
               aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <div className="accordion-body py-4 px-5 flex flex-col inline-block">
-                <button className="py-2" onClick ={onSelect}><img src={t1} alt="theme-1"></img></button>
-                <button className="py-2"><img src={t1} alt="theme-1"></img></button>
-                <button className="py-2"><img src={t1} alt="theme-1"></img></button>
-                <button className="py-2"><img src={t1} alt="theme-1"></img></button>
+                <button className="py-2" onClick ={setTheme1}><img src={t1} alt="theme-1"></img></button>
+                <button className="py-2" onClick ={setTheme2}><img src={t1} alt="theme-1"></img></button>
+                <button className="py-2" onClick ={setTheme3}><img src={t1} alt="theme-1"></img></button>
+                <button className="py-2" onClick ={setTheme4}><img src={t1} alt="theme-1"></img></button>
+                <button className="py-2" onClick ={setTheme5}><img src={t1} alt="theme-1"></img></button>
               </div>
             </div>
           </div>
