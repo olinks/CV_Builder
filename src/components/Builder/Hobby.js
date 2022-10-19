@@ -1,7 +1,7 @@
 const Hobby = () => {
     return (
         <>
-            
+
         </>
     )
 }
