@@ -1,13 +1,13 @@
 import Nav from './Nav'
 import Banner from './Banner'
 import Banner_image from '../img/netizens.jpg'
-const Home = () =>{
+const Home = ({con, address}) =>{
     return(
     <div className="App bg-slate-400">
       <div className="relative bg-slate-400 overflow-hidden">
         <div className="mx-auto max-w-7xl bg-slate-400">
           <div className="relative z-10 bg-slate-400 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-            <Nav />
+            <Nav con={con} address={address} />
             <Banner />
             <svg className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" fill="#9da8b9">
               <polygon points="40,0 90,0 50,100 0,100" />

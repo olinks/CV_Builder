@@ -1,6 +1,7 @@
+
 const Social_button = ({text}) => {
     return (
-        <button > {text} </button>
+        <button className="btn btn-lg" > Carton {text} </button>
     )
 }
 export default Social_button; 
