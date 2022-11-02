@@ -15,28 +15,30 @@ const Builder = ({con, address}) => {
     const r1 = (b) => {
         setBg(b)
     }
-    const [urlG, setUrlG] = useState({});
-    const options = {
-        method: 'GET',
-        url: 'https://deep-index.moralis.io/api/v2/0x8D2d8E8f7ea927817bFd5463673910841E1a1495/nft',
-        params: {chain: 'eth', format: 'decimal'},
-        headers: {accept: 'application/json', 'X-API-Key': 'test'}
-    };
+    const [urlG, setUrlG] = useState("");
+    const {image_url} = urlG;
+    // const options = {
+    //     method: 'GET',
+    //     url: 'https://deep-index.moralis.io/api/v2/0x8D2d8E8f7ea927817bFd5463673910841E1a1495/nft',
+    //     params: {chain: 'eth', format: 'decimal'},
+    //     headers: {accept: 'application/json', 'X-API-Key': 'test'}
+    // };
 
-    axios
-    .request(options)
-    .then(function (response) {
-        console.log(response.data);
-    })
-    .catch(function (error) {
-        console.error(error);
-    });
+    // axios
+    // .request(options)
+    // .then(function (response) {
+    //     console.log(response.data);
+    // })
+    // .catch(function (error) {
+    //     console.error(error);
+    // });
 
-    // const opt = {method: 'GET'};
-    // fetch('https://api.opensea.io/api/v1/asset/0xe42cad6fc883877a76a26a16ed92444ab177e306/37533/?include_orders=false', opt)
-    // .then(response => response.json())
-    // .then(response => setUrlG({response}))
-    // .catch(err => console.error(err));
+    const opt = {method: 'GET'};
+    fetch('https://api.opensea.io/api/v1/asset/0xe42cad6fc883877a76a26a16ed92444ab177e306/37533/?include_orders=false', opt)
+    .then(response => response.json())
+    // .then((response) => {console.log(response)})
+    .then(response => setUrlG(response))
+    .catch(err => console.error(err));
 
     return (
         <div className="bg-slate-400">
@@ -114,6 +116,7 @@ const Builder = ({con, address}) => {
                         data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body relative p-4">
+                        <img src={image_url} alt="img"> </img>
                     </div>
                     <div
                         className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
